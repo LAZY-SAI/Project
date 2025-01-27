@@ -1,0 +1,87 @@
+.header
+{
+    display: flex;
+    padding-inline: 10px;
+    margin-left: 20rem;
+}
+fieldset {
+    height: 50px;
+    width: 10%;
+    text-align: left;
+    border-radius: 0.5rem;
+    margin-top: 2vh;
+    margin-left: 30px;
+
+}
+legend {
+    margin-left: 1rem;
+    background-color: #99aee7;
+    border-radius: 2rem;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+input,select {
+    height: 20px;
+    width: 80%;
+    font-size: 1rem;
+    border-radius:2rem;
+    border: none;
+    padding: 1rem;   
+    color: #5c84f3;
+    font-weight: 600;
+    font-style: bold;
+}
+input:focus,
+textarea:focus
+{
+    outline: none;
+}
+.receipt
+{
+  
+    margin-top: 5rem;
+    margin-left: 30%;
+    border-radius: 10px;
+}
+ tr
+{
+    height:50px;
+}
+thead th{
+    margin-left: 1rem;
+}
+td
+{
+    padding: 0 50px;
+}
+ td input
+{
+    border: #d9dadc solid 3px ;
+    border-radius: 5px;
+    width: 5rem;
+    margin-left: 40px;
+}
+ .receipt h3
+{
+    display: flex;
+    align-items: right ;
+    text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+table tbody tr:nth-child(odd) 
+{
+    background-color: #f0f0f0; 
+}
+h3{
+    margin-top: -50px;
+    font-size: 40px;
+    margin-left: 13rem;
+    font-weight: 500;
+}
+
+
+  

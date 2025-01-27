@@ -1,0 +1,172 @@
+.details-container {
+  border-radius: 10px;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  width: 45rem;
+  height: 60rem;
+  align-items: center;
+  margin-left: 20rem;
+  border: black;
+  border-style:solid;
+  border-width: 2px;
+  z-index: 1;
+}
+
+label {
+  font-family: var(--font-fam-2);
+  font-size: 22px;
+  margin-left: 10rem;
+}
+fieldset {
+  height: 8vh;
+  text-align: left;
+  margin-top: 2rem;
+  border: none;
+}
+legend {
+  margin-left: 10px;
+  background-color: rgba(63, 184, 232, 0.708);
+  border-radius: 10px;
+  font-size: 0.9em;
+  padding: 0 0.7rem;
+  border: none;
+}
+input {
+  font-family: var(--font-fam-2);
+  height: 1rem;
+  background: transparent;
+  width: 24%;
+  font-size: 1rem;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  padding: 0.5rem;
+  margin-left: 10px;
+}
+.date{
+  display: flex;
+
+}
+.date label
+{
+  margin-left: 5rem;
+}
+
+
+ .input-section input 
+{ 
+  width: 20%;
+  position: sticky;
+}
+.fees-container
+{
+  border: black solid 2px; 
+  border-radius: 10px;
+  width: 80%;
+  height: 34%;
+  margin-left: 5rem;
+  padding-top: 10px;
+  margin-top: 6vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 700px;
+  cursor: pointer;
+  overflow-y:auto; 
+}
+::-webkit-scrollbar-track{
+  background: red; 
+  border-radius: 10px;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  margin-top: 10px;
+ color: white;
+ font-family: var(--font-fam-2);
+ transition: ease-in .2s;
+}
+button:hover
+{
+  background-color: rgb(89, 89, 210);
+}
+.list {
+  display: flex;
+  justify-content: space-between; 
+  width: 180px;
+  height: 300px; 
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.value
+{
+  width: 150px;
+  max-height: 600px; 
+  margin-top: 40px;
+}
+
+.list ul
+{
+  font-family: var(--font-fam-2);
+  font-size: 1.5rem;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+}
+.value ul
+{
+  list-style: none;
+  font-family: var(--font-fam-2);
+  font-size: 1.5rem;
+}
+.total h3 {
+  font-weight: bold;
+  font-size: 3vh;
+  font-family: var(--font-fam-2);
+  justify-content: space-between;
+}
+.total button
+{
+  margin-left: 12rem;
+  position: absolute;
+  margin-top: -3.5rem;
+}
+@media print{
+  .details-container
+  {
+    height: 50rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+  }
+  .fees-container
+  {
+    height: 20rem;
+    margin-top: -3rem;
+    margin-right: 2rem;
+    overflow: hidden;
+  }
+  .input-section input , button
+  {
+   display: none;
+  }
+  .total{
+    margin-top: -10px;
+  }
+  
+  hr {
+    display: none;
+  }
+}
